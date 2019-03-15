@@ -138,7 +138,7 @@ describe('01-strings-tasks', () => {
     assert.equal(isString(null), false, 'null');
     assert.equal(isString([]), false,  '[]');
     assert.equal(isString('test'), true, 'test');
-    assert.equal(isString(new String('test')), true,  "new String('test')");
+    assert.equal(isString(new String('test')), false,  "new String('test')");
     assert.linesOfCode(isString, 1);
   });
 
